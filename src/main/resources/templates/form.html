@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<title>Formulario Usuarios</title>
+</head>
+<body>
+	<div class="container mt=4">
+		<div class="col.sm-6">
+			<form action="" Method="POST"></form>
+			<div class="card">
+				<div class="card-header">
+					<h2>Formulario de Usuarios</h2>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label>Cedula: </label>
+						<input th:field="*{Cedula_Usua}"type="text" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Nombre: </label>
+						<input th:field="*{Nombre_Usua}"type="text" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Correo: </label>
+						<input th:field="*{Correo_Usua}"type="text" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Usuario: </label>
+						<input th:field="*{Usuario}"type="text" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Password: </label>
+						<input th:field="*{Clave}"type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="card-footer">
+					<input tye="submit" value="Guardar" class="btn btn-success">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
