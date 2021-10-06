@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="container mt=4">
-	<a th:href="@{/new}" class="btn btn-primary">Nuevo Usuario</a>
+	<a th:href="@{/new}" class="btn btn-primary">Nuevo</a>
 		<table>
 			<thead>
 				<tr>
@@ -21,12 +21,12 @@
 				</tr>
 			</thead>
 				<tbody>
-					<tr th:each="personas:$personas">
-						<td th:text="${Persona.Cedula_Usua}"></td>
-						<td th:text="${Persona.Nombre_Usua}"></td>
-						<td th:text="${Persona.Correo_Usua}"></td>
-						<td th:text="${Persona.Usuario}"></td>
-						<td th:text="${Persona.Clave}"></td>
+					<tr th:each="persona:${persona}">
+						<td th:text="${persona.Cedula}"></td>
+						<td th:text="${persona.Nombre}"></td>
+						<td th:text="${persona.Correo}"></td>
+						<td th:text="${persona.Usuario}"></td>
+						<td th:text="${persona.Clave}"></td>
 						<td>
 							<a class= "btn btn-warning">Editar</a>
 							<a class= "btn btn-danger">Eliminar</a>

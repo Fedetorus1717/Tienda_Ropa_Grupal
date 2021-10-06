@@ -9,9 +9,9 @@ import javax.persistence.Table;
 public class Persona {
 	
 	@Id
-	private int Cedula_Usua;
-	private String Nombre_Usua;
-	private String Correo_Usua;
+	private int Cedula;
+	private String Nombre;
+	private String Correo;
 	private String Usuario;
 	private String Clave;
 	
@@ -19,55 +19,54 @@ public class Persona {
 	{
 		
 	}
-	
-	public Persona(int Cedula, String Nombre, String Correo, String User, String Password )
-	{
+
+	public Persona(int cedula, String nombre, String correo, String usuario, String clave) {
 		super();
-		Cedula_Usua = Cedula;
-		Nombre_Usua = Nombre;
-		Correo_Usua = Correo;
-		Usuario = User;
-		Clave = Password;
+		Cedula = cedula;
+		Nombre = nombre;
+		Correo = correo;
+		Usuario = usuario;
+		Clave = clave;
 	}
 
-	public int getCedula_Usua() {
-		return Cedula_Usua;
+	public int getCedula() {
+		return Cedula;
 	}
 
-	public void setCedula_Usua(int Cedula) {
-		Cedula_Usua = Cedula;
+	public void setCedula(int cedula) {
+		Cedula = cedula;
 	}
 
-	public String getNombre_Usua() {
-		return Nombre_Usua;
+	public String getNombre() {
+		return Nombre;
 	}
 
-	public void setNombre_Usua(String Nombre) {
-		Nombre_Usua = Nombre;
+	public void setNombre(String nombre) {
+		Nombre = nombre;
 	}
 
-	public String getCorreo_Usua() {
-		return Correo_Usua;
+	public String getCorreo() {
+		return Correo;
 	}
 
-	public void setCorreo_Usua(String Correo) {
-		Correo_Usua = Correo;
+	public void setCorreo(String correo) {
+		Correo = correo;
 	}
 
 	public String getUsuario() {
 		return Usuario;
 	}
 
-	public void setUsuario(String User) {
-		Usuario = User;
+	public void setUsuario(String usuario) {
+		Usuario = usuario;
 	}
 
 	public String getClave() {
 		return Clave;
 	}
 
-	public void setClave(String Password) {
-		Clave = Password;
+	public void setClave(String clave) {
+		Clave = clave;
 	}
 	
 }
